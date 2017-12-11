@@ -1,0 +1,6 @@
+framework module Pods_YVFirebase {
+  umbrella header "Pods-YVFirebase-umbrella.h"
+
+  export *
+  module * { export * }
+}
