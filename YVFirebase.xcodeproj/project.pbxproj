@@ -7,17 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4317501FDE6FAC004968B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43174F1FDE6FAC004968B0 /* SignUpViewController.swift */; };
+		AC4317521FDE6FBA004968B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4317511FDE6FBA004968B0 /* LoginViewController.swift */; };
+		AC4317541FDE71A4004968B0 /* YVTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4317531FDE71A4004968B0 /* YVTextFieldView.swift */; };
+		AC4317561FDE71AD004968B0 /* YVTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4317551FDE71AD004968B0 /* YVTextFieldView.xib */; };
+		AC4317581FDE7460004968B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4317571FDE7460004968B0 /* Extensions.swift */; };
+		AC43175A1FDE854B004968B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4317591FDE854A004968B0 /* GoogleService-Info.plist */; };
 		AC6F51101FDE561300EEF35A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F510F1FDE561300EEF35A /* AppDelegate.swift */; };
 		AC6F51121FDE561300EEF35A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F51111FDE561300EEF35A /* ViewController.swift */; };
 		AC6F51151FDE561300EEF35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51131FDE561300EEF35A /* Main.storyboard */; };
 		AC6F51171FDE561300EEF35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51161FDE561300EEF35A /* Assets.xcassets */; };
 		AC6F511A1FDE561300EEF35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51181FDE561300EEF35A /* LaunchScreen.storyboard */; };
+		ACDB78D61FDEABDA0039FE22 /* YVButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */; };
+		ACDB78D81FDEABF30039FE22 /* YVButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */; };
+		ACDB78DA1FDEAC600039FE22 /* YVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDB78D91FDEAC600039FE22 /* YVView.swift */; };
 		D9EA636E3EA8050A17E82F96 /* Pods_YVFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88A11A371D005C146176724 /* Pods_YVFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4EE72D056D37F3EB71770503 /* Pods-YVFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YVFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-YVFirebase/Pods-YVFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		5609AA2A1E4CAD9D8D891C12 /* Pods-YVFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YVFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YVFirebase/Pods-YVFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		AC43174F1FDE6FAC004968B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC4317511FDE6FBA004968B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC4317531FDE71A4004968B0 /* YVTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVTextFieldView.swift; sourceTree = "<group>"; };
+		AC4317551FDE71AD004968B0 /* YVTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YVTextFieldView.xib; sourceTree = "<group>"; };
+		AC4317571FDE7460004968B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AC4317591FDE854A004968B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6F510C1FDE561300EEF35A /* YVFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F510F1FDE561300EEF35A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6F51111FDE561300EEF35A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +40,9 @@
 		AC6F51161FDE561300EEF35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6F51191FDE561300EEF35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6F511B1FDE561300EEF35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YVButtonView.xib; sourceTree = "<group>"; };
+		ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVButtonView.swift; sourceTree = "<group>"; };
+		ACDB78D91FDEAC600039FE22 /* YVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVView.swift; sourceTree = "<group>"; };
 		F88A11A371D005C146176724 /* Pods_YVFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YVFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +67,63 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC4317491FDE6A13004968B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F510F1FDE561300EEF35A /* AppDelegate.swift */,
+				AC4317571FDE7460004968B0 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC43174A1FDE6A28004968B0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F51131FDE561300EEF35A /* Main.storyboard */,
+				AC6F51181FDE561300EEF35A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC43174B1FDE6A43004968B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC4317591FDE854A004968B0 /* GoogleService-Info.plist */,
+				AC6F51161FDE561300EEF35A /* Assets.xcassets */,
+				AC43174A1FDE6A28004968B0 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC43174C1FDE6A59004968B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC43174F1FDE6FAC004968B0 /* SignUpViewController.swift */,
+				AC4317511FDE6FBA004968B0 /* LoginViewController.swift */,
+				AC6F51111FDE561300EEF35A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC43174D1FDE6A72004968B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC43174E1FDE6A7B004968B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC4317531FDE71A4004968B0 /* YVTextFieldView.swift */,
+				AC4317551FDE71AD004968B0 /* YVTextFieldView.xib */,
+				ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */,
+				ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */,
+				ACDB78D91FDEAC600039FE22 /* YVView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AC6F51031FDE561300EEF35A = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +145,11 @@
 		AC6F510E1FDE561300EEF35A /* YVFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				AC6F510F1FDE561300EEF35A /* AppDelegate.swift */,
-				AC6F51111FDE561300EEF35A /* ViewController.swift */,
-				AC6F51131FDE561300EEF35A /* Main.storyboard */,
-				AC6F51161FDE561300EEF35A /* Assets.xcassets */,
-				AC6F51181FDE561300EEF35A /* LaunchScreen.storyboard */,
+				AC4317491FDE6A13004968B0 /* Common */,
+				AC43174D1FDE6A72004968B0 /* Models */,
+				AC43174E1FDE6A7B004968B0 /* Views */,
+				AC43174C1FDE6A59004968B0 /* Controllers */,
+				AC43174B1FDE6A43004968B0 /* Resources */,
 				AC6F511B1FDE561300EEF35A /* Info.plist */,
 			);
 			path = YVFirebase;
@@ -101,6 +176,7 @@
 				AC6F510A1FDE561300EEF35A /* Resources */,
 				BFDCD3AD80D88C015A4384D8 /* [CP] Embed Pods Frameworks */,
 				736B4F9FD1AA539E5A783E72 /* [CP] Copy Pods Resources */,
+				AC4317481FDE68E1004968B0 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -152,7 +228,10 @@
 			files = (
 				AC6F511A1FDE561300EEF35A /* LaunchScreen.storyboard in Resources */,
 				AC6F51171FDE561300EEF35A /* Assets.xcassets in Resources */,
+				AC43175A1FDE854B004968B0 /* GoogleService-Info.plist in Resources */,
+				ACDB78D61FDEABDA0039FE22 /* YVButtonView.xib in Resources */,
 				AC6F51151FDE561300EEF35A /* Main.storyboard in Resources */,
+				AC4317561FDE71AD004968B0 /* YVTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +271,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YVFirebase/Pods-YVFirebase-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC4317481FDE68E1004968B0 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
 		BFDCD3AD80D88C015A4384D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,12 +294,16 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-YVFirebase/Pods-YVFirebase-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4317541FDE71A4004968B0 /* YVTextFieldView.swift in Sources */,
+				ACDB78DA1FDEAC600039FE22 /* YVView.swift in Sources */,
+				AC4317581FDE7460004968B0 /* Extensions.swift in Sources */,
+				AC4317521FDE6FBA004968B0 /* LoginViewController.swift in Sources */,
+				AC4317501FDE6FAC004968B0 /* SignUpViewController.swift in Sources */,
+				ACDB78D81FDEABF30039FE22 /* YVButtonView.swift in Sources */,
 				AC6F51121FDE561300EEF35A /* ViewController.swift in Sources */,
 				AC6F51101FDE561300EEF35A /* AppDelegate.swift in Sources */,
 			);
@@ -363,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YVFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yash.YVFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yv.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = YVFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yash.YVFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yv.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
