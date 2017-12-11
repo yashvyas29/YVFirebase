@@ -39,12 +39,12 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNd-Fi-V9f" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="587.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-WT-748">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="571.5"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="500.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-qU-1iJ" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-qU-1iJ" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
@@ -63,7 +63,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9P-Wu-wvE" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="194.5" width="359" height="182.5"/>
+                                                        <rect key="frame" x="0.0" y="100" width="359" height="182.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -81,7 +81,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uky-0g-TkI" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="377" width="359" height="66.5"/>
+                                                        <rect key="frame" x="0.0" y="282.5" width="359" height="90"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -99,7 +99,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxl-eQ-pFs" customClass="YVButtonView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="443.5" width="359" height="128"/>
+                                                        <rect key="frame" x="0.0" y="372.5" width="359" height="128"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -218,15 +218,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gy-AY-D23">
-                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Am-5Z-W6U" customClass="IQPreviousNextView" customModule="IQKeyboardManagerSwift">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="587.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uvR-50-int">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="571.5"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="410.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-74-4XI" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-74-4XI" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
@@ -245,7 +245,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa9-d6-FTk" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="194.5" width="359" height="182.5"/>
+                                                        <rect key="frame" x="0.0" y="100" width="359" height="182.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -263,7 +263,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdO-Ym-KUX" customClass="YVButtonView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="443.5" width="359" height="128"/>
+                                                        <rect key="frame" x="0.0" y="282.5" width="359" height="128"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
