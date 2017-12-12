@@ -24,6 +24,26 @@ class YVTextFieldView: YVView {
             }
         }
     }
+    @IBInspectable var placeholder: String? = nil {
+        didSet {
+            textField.placeholder = placeholder
+        }
+    }
+    @IBInspectable var textFieldBackgroundColor: UIColor? = nil {
+        didSet {
+            textField.backgroundColor = textFieldBackgroundColor
+        }
+    }
+    @IBInspectable var isSecureTextEntry: Bool = false {
+        didSet {
+            textField.isSecureTextEntry = isSecureTextEntry
+        }
+    }
+    @IBInspectable var isAutoCorrect: Bool = true {
+        didSet {
+            textField.autocorrectionType = UITextAutocorrectionType(rawValue: (isAutoCorrect ? 2 : 1)) ?? .default
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,10 +58,12 @@ class YVTextFieldView: YVView {
     override func setup() {
         super.setup()
         
-        textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: cornerRadius, height: height))
-        textField.layer.cornerRadius = cornerRadius
-        textField.layer.masksToBounds = true
+        if cornerRadius >= 0 {
+            textField.leftViewMode = .always
+            textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: cornerRadius, height: height))
+            textField.layer.cornerRadius = cornerRadius
+            textField.layer.masksToBounds = true
+        }
     }
     
     /*

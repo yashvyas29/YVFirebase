@@ -8,14 +8,31 @@
 
 import UIKit
 
+@objc protocol YVButtonViewDelegate {
+    @objc optional func buttonAction(_ sender: UIButton)
+}
+
 @IBDesignable
 class YVButtonView: YVView {
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet var target: YVButtonViewDelegate?
     
     @IBInspectable var cornerRadius: CGFloat = 25 {
         didSet {
             button.layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable var title: String? = nil {
+        didSet {
+            button.setTitle(title, for: .normal)
+        }
+    }
+    
+    @IBInspectable var buttonBackgroundColor: UIColor? = nil {
+        didSet {
+            button.backgroundColor = buttonBackgroundColor
         }
     }
     
@@ -32,8 +49,14 @@ class YVButtonView: YVView {
     override func setup() {
         super.setup()
         
-        button.layer.cornerRadius = cornerRadius
-        button.layer.masksToBounds = true
+        if cornerRadius >= 0 {
+            button.layer.cornerRadius = cornerRadius
+            button.layer.masksToBounds = true
+        }
+    }
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        target?.buttonAction?(sender)
     }
     
     /*

@@ -14,7 +14,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yxx-Bp-lQZ">
             <objects>
-                <navigationController id="CwT-sn-DUS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="CwT-sn-DUS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sp0-Yt-dk8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-1070" y="107"/>
         </scene>
-        <!--Sign Up-->
+        <!--Target-->
         <scene sceneID="ZOJ-9m-ezg">
             <objects>
                 <viewController id="jVX-t5-4Vr" customClass="SignUpViewController" customModule="YVFirebase" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-WT-748">
-                                                <rect key="frame" x="8" y="8" width="359" height="500.5"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="587"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LG-qU-1iJ" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
@@ -60,6 +60,8 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Name"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAutoCorrect" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9P-Wu-wvE" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
@@ -78,6 +80,8 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Email"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAutoCorrect" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uky-0g-TkI" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
@@ -96,10 +100,32 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="20"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Password"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbO-Pv-ES0" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="372.5" width="359" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm Password"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxl-eQ-pFs" customClass="YVButtonView" customModule="YVFirebase" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="372.5" width="359" height="128"/>
+                                                        <rect key="frame" x="0.0" y="462.5" width="359" height="124.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -114,7 +140,11 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Sign Up"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="target" destination="jVX-t5-4Vr" id="yri-xU-VZd"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -148,6 +178,13 @@
                         <viewLayoutGuide key="safeArea" id="59b-uF-7Rb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="ygk-zc-pFn"/>
+                    <connections>
+                        <outlet property="vwTxtConfirmPassword" destination="YbO-Pv-ES0" id="oBX-hx-JmT"/>
+                        <outlet property="vwTxtEmail" destination="u9P-Wu-wvE" id="eOK-EL-WQZ"/>
+                        <outlet property="vwTxtName" destination="5LG-qU-1iJ" id="JVi-Fg-qgd"/>
+                        <outlet property="vwTxtPassword" destination="uky-0g-TkI" id="2eD-7c-4m9"/>
+                        <segue destination="MsI-PL-ymG" kind="show" identifier="SignUpSuccessful" id="GF9-fq-dhP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAn-6y-VDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +193,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YVFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,19 +201,27 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbq-Yp-8R9">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S4U-3s-81Y">
-                                        <rect key="frame" x="8" y="8" width="375" height="587"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="S4U-3s-81Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riw-du-Q6z">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="293.5"/>
-                                                <state key="normal" title="Sign Up"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="jVX-t5-4Vr" kind="show" id="7cJ-dZ-OK3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-4C-Nht">
-                                                <rect key="frame" x="0.0" y="293.5" width="375" height="293.5"/>
-                                                <state key="normal" title="Login"/>
+                                                <rect key="frame" x="0.0" y="302" width="375" height="301"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="Eu7-QZ-Y9l" kind="show" id="wHe-3R-dTK"/>
                                                 </connections>
@@ -185,12 +230,12 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="S4U-3s-81Y" firstAttribute="leading" secondItem="Lbq-Yp-8R9" secondAttribute="leadingMargin" id="6u9-gQ-CbU"/>
-                                    <constraint firstItem="S4U-3s-81Y" firstAttribute="top" secondItem="Lbq-Yp-8R9" secondAttribute="topMargin" id="V7B-s8-LUe"/>
+                                    <constraint firstItem="S4U-3s-81Y" firstAttribute="leading" secondItem="Lbq-Yp-8R9" secondAttribute="leading" id="6u9-gQ-CbU"/>
+                                    <constraint firstItem="S4U-3s-81Y" firstAttribute="top" secondItem="Lbq-Yp-8R9" secondAttribute="top" id="V7B-s8-LUe"/>
                                     <constraint firstItem="S4U-3s-81Y" firstAttribute="centerY" secondItem="Lbq-Yp-8R9" secondAttribute="centerY" id="cDv-g6-xVh"/>
                                     <constraint firstItem="S4U-3s-81Y" firstAttribute="width" secondItem="Lbq-Yp-8R9" secondAttribute="width" id="eTG-iV-zIj"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="S4U-3s-81Y" secondAttribute="trailing" id="ibF-Ww-Ezv"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="S4U-3s-81Y" secondAttribute="bottom" id="wmp-dP-2ve"/>
+                                    <constraint firstAttribute="trailing" secondItem="S4U-3s-81Y" secondAttribute="trailing" id="ibF-Ww-Ezv"/>
+                                    <constraint firstAttribute="bottom" secondItem="S4U-3s-81Y" secondAttribute="bottom" id="wmp-dP-2ve"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -209,10 +254,10 @@
             </objects>
             <point key="canvasLocation" x="-391" y="107"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Target-->
         <scene sceneID="f9z-yn-6oI">
             <objects>
-                <viewController id="Eu7-QZ-Y9l" customClass="LoginViewController" customModule="YVFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="Eu7-QZ-Y9l" customClass="LoginViewController" customModule="YVFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jS-bL-MXh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,6 +287,8 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Email"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAutoCorrect" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa9-d6-FTk" customClass="YVTextFieldView" customModule="YVFirebase" customModuleProvider="target">
@@ -260,6 +307,8 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter Password"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdO-Ym-KUX" customClass="YVButtonView" customModule="YVFirebase" customModuleProvider="target">
@@ -278,7 +327,11 @@
                                                             <userDefinedRuntimeAttribute type="number" keyPath="bottomPadding">
                                                                 <real key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Login"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="target" destination="Eu7-QZ-Y9l" id="wyK-Le-OvE"/>
+                                                        </connections>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -311,10 +364,76 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d4P-A7-zBQ"/>
                     </view>
+                    <connections>
+                        <outlet property="vwTxtEmail" destination="0bX-74-4XI" id="fa4-UE-6dh"/>
+                        <outlet property="vwTxtPassword" destination="Oa9-d6-FTk" id="TJ1-zJ-JQH"/>
+                        <segue destination="MsI-PL-ymG" kind="show" identifier="LoginSuccessful" id="cnj-h1-ros"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALP-wK-vGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-391" y="808"/>
         </scene>
+        <!--Target-->
+        <scene sceneID="Fhz-9j-wnp">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="Home" id="MsI-PL-ymG" customClass="HomeViewController" customModule="YVFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUQ-QY-5cL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-XI-X6B" customClass="YVButtonView" customModule="YVFirebase" customModuleProvider="target">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4YZ-jE-ppd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Logout"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="target" destination="MsI-PL-ymG" id="Ct7-TH-Rid"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAD-rW-hnH" customClass="YVLabelView" customModule="YVFirebase" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Welcome !"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="labelTextAlignment">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bna-Lj-mkN" firstAttribute="trailing" secondItem="JAD-rW-hnH" secondAttribute="trailing" id="1kI-mt-yuq"/>
+                            <constraint firstItem="JAD-rW-hnH" firstAttribute="leading" secondItem="bna-Lj-mkN" secondAttribute="leading" id="6WK-KY-EeD"/>
+                            <constraint firstItem="t8c-XI-X6B" firstAttribute="top" secondItem="JAD-rW-hnH" secondAttribute="bottom" constant="20" id="TnA-Pb-Nfd"/>
+                            <constraint firstItem="JAD-rW-hnH" firstAttribute="top" secondItem="bna-Lj-mkN" secondAttribute="top" id="U8c-5z-mwh"/>
+                            <constraint firstItem="t8c-XI-X6B" firstAttribute="leading" secondItem="bna-Lj-mkN" secondAttribute="leading" constant="20" id="ecf-pg-kMv"/>
+                            <constraint firstItem="bna-Lj-mkN" firstAttribute="bottom" secondItem="t8c-XI-X6B" secondAttribute="bottom" constant="20" id="g9a-xH-DOv"/>
+                            <constraint firstItem="bna-Lj-mkN" firstAttribute="trailing" secondItem="t8c-XI-X6B" secondAttribute="trailing" constant="20" id="sqa-A4-eSb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bna-Lj-mkN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jdm-WM-dgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="807"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GF9-fq-dhP"/>
+    </inferredMetricsTieBreakers>
 </document>

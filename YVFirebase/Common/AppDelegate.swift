@@ -22,6 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         IQKeyboardManager.sharedManager().enable = true
         
+        if let _ = Auth.auth().currentUser {
+            if window == nil {
+                window = UIWindow(frame: UIScreen.main.bounds)
+            }
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let navVC = storyboard.instantiateViewController(withIdentifier: "NavigationController") as? UINavigationController {
+                let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+                navVC.viewControllers = [homeVC]
+                window?.rootViewController = navVC
+                window?.makeKeyAndVisible()
+            }
+        }
+        
         return true
     }
 

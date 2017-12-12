@@ -11,14 +11,13 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var vwTxtEmail: YVTextFieldView!
+    @IBOutlet weak var vwTxtPassword: YVTextFieldView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        Auth.auth().signIn(withEmail: "", password: "") { (user, error) in
-//            // ...
-//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +25,25 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loginAction() {
+        guard
+            let email = vwTxtEmail.textField.text,
+            let password = vwTxtPassword.textField.text,
+            !email.isEmpty,
+            !password.isEmpty
+            
+            else {
+                return
+        }
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let errorText = error?.localizedDescription {
+                print(errorText)
+            } else {
+                self.performSegue(withIdentifier: "LoginSuccessful", sender: nil)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -37,4 +55,10 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
+
+extension LoginViewController: YVButtonViewDelegate {
+    func buttonAction(_ sender: UIButton) {
+        loginAction()
+    }
 }

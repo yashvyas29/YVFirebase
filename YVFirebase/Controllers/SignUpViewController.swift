@@ -11,14 +11,15 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var vwTxtName: YVTextFieldView!
+    @IBOutlet weak var vwTxtEmail: YVTextFieldView!
+    @IBOutlet weak var vwTxtPassword: YVTextFieldView!
+    @IBOutlet weak var vwTxtConfirmPassword: YVTextFieldView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        Auth.auth().createUser(withEmail: "", password: "") { (user, error) in
-//            // ...
-//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +27,27 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func signUpAction() {
+        guard
+            let name = vwTxtName.textField.text,
+            let email = vwTxtEmail.textField.text,
+            let password = vwTxtPassword.textField.text,
+            !name.isEmpty,
+            !email.isEmpty,
+            !password.isEmpty
+            
+            else {
+                return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if let errorText = error?.localizedDescription {
+                print(errorText)
+            } else {
+                self.performSegue(withIdentifier: "SignUpSuccessful", sender: nil)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -37,4 +59,10 @@ class SignUpViewController: UIViewController {
     }
     */
 
+}
+
+extension SignUpViewController: YVButtonViewDelegate {
+    func buttonAction(_ sender: UIButton) {
+        signUpAction()
+    }
 }

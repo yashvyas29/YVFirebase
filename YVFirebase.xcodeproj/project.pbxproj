@@ -14,10 +14,12 @@
 		AC4317581FDE7460004968B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4317571FDE7460004968B0 /* Extensions.swift */; };
 		AC43175A1FDE854B004968B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC4317591FDE854A004968B0 /* GoogleService-Info.plist */; };
 		AC6F51101FDE561300EEF35A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F510F1FDE561300EEF35A /* AppDelegate.swift */; };
-		AC6F51121FDE561300EEF35A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6F51111FDE561300EEF35A /* ViewController.swift */; };
 		AC6F51151FDE561300EEF35A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51131FDE561300EEF35A /* Main.storyboard */; };
 		AC6F51171FDE561300EEF35A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51161FDE561300EEF35A /* Assets.xcassets */; };
 		AC6F511A1FDE561300EEF35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F51181FDE561300EEF35A /* LaunchScreen.storyboard */; };
+		AC9C1BF91FDF9F36007962DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C1BF81FDF9F36007962DE /* HomeViewController.swift */; };
+		AC9C1BFB1FDFA111007962DE /* YVLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9C1BFA1FDFA111007962DE /* YVLabelView.swift */; };
+		AC9C1BFD1FDFA128007962DE /* YVLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9C1BFC1FDFA127007962DE /* YVLabelView.xib */; };
 		ACDB78D61FDEABDA0039FE22 /* YVButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */; };
 		ACDB78D81FDEABF30039FE22 /* YVButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */; };
 		ACDB78DA1FDEAC600039FE22 /* YVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDB78D91FDEAC600039FE22 /* YVView.swift */; };
@@ -35,11 +37,13 @@
 		AC4317591FDE854A004968B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC6F510C1FDE561300EEF35A /* YVFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F510F1FDE561300EEF35A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC6F51111FDE561300EEF35A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC6F51141FDE561300EEF35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC6F51161FDE561300EEF35A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6F51191FDE561300EEF35A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6F511B1FDE561300EEF35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9C1BF81FDF9F36007962DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC9C1BFA1FDFA111007962DE /* YVLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVLabelView.swift; sourceTree = "<group>"; };
+		AC9C1BFC1FDFA127007962DE /* YVLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YVLabelView.xib; sourceTree = "<group>"; };
 		ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YVButtonView.xib; sourceTree = "<group>"; };
 		ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVButtonView.swift; sourceTree = "<group>"; };
 		ACDB78D91FDEAC600039FE22 /* YVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YVView.swift; sourceTree = "<group>"; };
@@ -100,7 +104,7 @@
 			children = (
 				AC43174F1FDE6FAC004968B0 /* SignUpViewController.swift */,
 				AC4317511FDE6FBA004968B0 /* LoginViewController.swift */,
-				AC6F51111FDE561300EEF35A /* ViewController.swift */,
+				AC9C1BF81FDF9F36007962DE /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +124,8 @@
 				ACDB78D71FDEABF30039FE22 /* YVButtonView.swift */,
 				ACDB78D51FDEABDA0039FE22 /* YVButtonView.xib */,
 				ACDB78D91FDEAC600039FE22 /* YVView.swift */,
+				AC9C1BFA1FDFA111007962DE /* YVLabelView.swift */,
+				AC9C1BFC1FDFA127007962DE /* YVLabelView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			files = (
 				AC6F511A1FDE561300EEF35A /* LaunchScreen.storyboard in Resources */,
 				AC6F51171FDE561300EEF35A /* Assets.xcassets in Resources */,
+				AC9C1BFD1FDFA128007962DE /* YVLabelView.xib in Resources */,
 				AC43175A1FDE854B004968B0 /* GoogleService-Info.plist in Resources */,
 				ACDB78D61FDEABDA0039FE22 /* YVButtonView.xib in Resources */,
 				AC6F51151FDE561300EEF35A /* Main.storyboard in Resources */,
@@ -322,9 +329,10 @@
 				ACDB78DA1FDEAC600039FE22 /* YVView.swift in Sources */,
 				AC4317581FDE7460004968B0 /* Extensions.swift in Sources */,
 				AC4317521FDE6FBA004968B0 /* LoginViewController.swift in Sources */,
+				AC9C1BFB1FDFA111007962DE /* YVLabelView.swift in Sources */,
 				AC4317501FDE6FAC004968B0 /* SignUpViewController.swift in Sources */,
+				AC9C1BF91FDF9F36007962DE /* HomeViewController.swift in Sources */,
 				ACDB78D81FDEABF30039FE22 /* YVButtonView.swift in Sources */,
-				AC6F51121FDE561300EEF35A /* ViewController.swift in Sources */,
 				AC6F51101FDE561300EEF35A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

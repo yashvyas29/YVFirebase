@@ -37,3 +37,13 @@ extension UIView {
     }
     
 }
+
+extension UIViewController {
+    func hideBackButton() {
+        navigationItem.hidesBackButton = true
+    }
+    
+    func showBackButton() {
+        navigationItem.hidesBackButton = false
+    }
+}
